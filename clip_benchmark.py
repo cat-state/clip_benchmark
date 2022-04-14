@@ -12,7 +12,7 @@ def get_sentence_embs(path: Path, dataset: Path):
     if Path(path).exists():
         return np.load(path)
     else:
-        ds = WebDataset("/home/a/mscoco/{00000..00059}.tar").to_tuple("txt")
+        ds = WebDataset(dataset).to_tuple("txt")
         loader = WebLoader(ds, batch_size=2048, collate_fn=list)
         model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
         sentence_embs = np.concatenate([model.encode([b[0] for b in batch]) for batch in tqdm(loader)], axis=0)
