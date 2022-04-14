@@ -24,7 +24,7 @@ def clip_benchmark(img_embeds_file: Path,
                    text_embeds_file: Path,
                    sentence_embs: Path,
                    n=30000,
-                   dataset="/home/a/mscoco{00000..00059}.tar"):
+                   dataset="/home/a/mscoco/{00000..00059}.tar"):
 
 
     sentence_embs = get_sentence_embs(sentence_embs, dataset)
