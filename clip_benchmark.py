@@ -60,7 +60,7 @@ def clip_benchmark(img_embeds_file: Path,
 
     text_sim = (sentence_embs[unique_texts[text_idxs]] * sentence_embs[unique_texts][:, None, :]).sum(axis=-1)
     print("img->text similarity @5:", text_sim.max(1).mean(), text_sim.max(1).std())
-    print("img->img similarity @1:", text_sim[:, 0].mean(), text_sim[:, 0].std())
+    print("img->text similarity @1:", text_sim[:, 0].mean(), text_sim[:, 0].std())
 
 
 
