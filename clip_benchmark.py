@@ -113,6 +113,9 @@ def plot_models():
         "openclip ViT-B-16": dict(img_embeds="coco-embeds-open-clip-vit-b-16/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-16/text_emb/text_emb_0.npy"),
 
+        "openclip ViT-B-16 (336)": dict(img_embeds="coco-embeds-open_clip-vit-b-16-336/img_emb/img_emb_0.npy",
+                                  text_embeds="coco-embeds-open_clip-vit-b-16-336/text_emb/text_emb_0.npy"),
+
         "openclip ViT-B-32": dict(img_embeds="coco-embeds-open-clip-vit-b-32/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-32/text_emb/text_emb_0.npy"),
 
@@ -130,6 +133,9 @@ def plot_models():
 
         "openai ViT-L/14":  dict(img_embeds="coco-embeds-openai-vit-l-14/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-openai-vit-l-14/text_emb/text_emb_0.npy"),
+
+        "openai ViT-L/14 (336)":  dict(img_embeds="coco-embeds-openai-vit-l-14-336/img_emb/img_emb_0.npy",
+                                  text_embeds="coco-embeds-openai-vit-l-14-336/text_emb/text_emb_0.npy"),
 
         "cloob ViT-B/16":  dict(img_embeds="cloob-vit-b-16/cloob_laion_400m_vit_b_16_32_epochs_coco_train2017_image_embeds.npy",
                                   text_embeds="cloob-vit-b-16/cloob_laion_400m_vit_b_16_32_epochs_coco_train2017_text_embeds.npy"),
