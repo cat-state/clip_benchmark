@@ -150,7 +150,7 @@ def plot_models():
 
     for i, metric in enumerate(["text->img", "img->text"]):
         for j, at in enumerate([5, "similarity"]):
-            lims = (results[results["@"] == at]["value"].min() * 0.95, results[results["@"] == at]["value"].max() * 1.05)
+            lims = (results[results["@"] == at]["value"].min() * 0.99, results[results["@"] == at]["value"].max() * 1.01)
             for ax in axes[j]:
                 print(lims)
                 ax.set(ylim=lims)
