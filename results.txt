@@ -1,0 +1,526 @@
+openclip ViT-B-16
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.371 
+img->text @ 1 0.387 
+text->img @ 5 0.635 
+img->text @ 5 0.653 
+text->img @ similarity 0.886 0.165
+img->text @ similarity 0.888 0.164
+n: 10000
+text->img @ 1 0.300 
+img->text @ 1 0.317 
+text->img @ 5 0.540 
+img->text @ 5 0.572 
+text->img @ similarity 0.870 0.170
+img->text @ similarity 0.873 0.169
+n: 15000
+text->img @ 1 0.258 
+img->text @ 1 0.272 
+text->img @ 5 0.483 
+img->text @ 5 0.504 
+text->img @ similarity 0.861 0.171
+img->text @ similarity 0.866 0.171
+n: 20000
+text->img @ 1 0.227 
+img->text @ 1 0.243 
+text->img @ 5 0.441 
+img->text @ 5 0.459 
+text->img @ similarity 0.853 0.173
+img->text @ similarity 0.861 0.172
+n: 25000
+text->img @ 1 0.212 
+img->text @ 1 0.228 
+text->img @ 5 0.413 
+img->text @ 5 0.430 
+text->img @ similarity 0.850 0.174
+img->text @ similarity 0.857 0.172
+n: 30000
+text->img @ 1 0.198 
+img->text @ 1 0.214 
+text->img @ 5 0.389 
+img->text @ 5 0.408 
+text->img @ similarity 0.848 0.174
+img->text @ similarity 0.854 0.172
+n: 35000
+text->img @ 1 0.188 
+img->text @ 1 0.203 
+text->img @ 5 0.370 
+img->text @ 5 0.388 
+text->img @ similarity 0.846 0.174
+img->text @ similarity 0.852 0.173
+n: 40000
+text->img @ 1 0.179 
+img->text @ 1 0.195 
+text->img @ 5 0.356 
+img->text @ 5 0.374 
+text->img @ similarity 0.845 0.174
+img->text @ similarity 0.850 0.173
+n: 45000
+text->img @ 1 0.172 
+img->text @ 1 0.188 
+text->img @ 5 0.344 
+img->text @ 5 0.363 
+text->img @ similarity 0.843 0.175
+img->text @ similarity 0.848 0.174
+n: 50000
+text->img @ 1 0.167 
+img->text @ 1 0.181 
+text->img @ 5 0.333 
+img->text @ 5 0.351 
+text->img @ similarity 0.842 0.174
+img->text @ similarity 0.847 0.174
+openclip ViT-B-32
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.319 
+img->text @ 1 0.343 
+text->img @ 5 0.583 
+img->text @ 5 0.610 
+text->img @ similarity 0.875 0.169
+img->text @ similarity 0.880 0.168
+n: 10000
+text->img @ 1 0.252 
+img->text @ 1 0.273 
+text->img @ 5 0.489 
+img->text @ 5 0.510 
+text->img @ similarity 0.863 0.171
+img->text @ similarity 0.866 0.171
+n: 15000
+text->img @ 1 0.214 
+img->text @ 1 0.235 
+text->img @ 5 0.428 
+img->text @ 5 0.451 
+text->img @ similarity 0.856 0.171
+img->text @ similarity 0.860 0.172
+n: 20000
+text->img @ 1 0.191 
+img->text @ 1 0.212 
+text->img @ 5 0.387 
+img->text @ 5 0.413 
+text->img @ similarity 0.850 0.173
+img->text @ similarity 0.854 0.173
+n: 25000
+text->img @ 1 0.176 
+img->text @ 1 0.197 
+text->img @ 5 0.360 
+img->text @ 5 0.387 
+text->img @ similarity 0.848 0.174
+img->text @ similarity 0.851 0.173
+n: 30000
+text->img @ 1 0.162 
+img->text @ 1 0.184 
+text->img @ 5 0.337 
+img->text @ 5 0.365 
+text->img @ similarity 0.845 0.174
+img->text @ similarity 0.847 0.174
+n: 35000
+text->img @ 1 0.152 
+img->text @ 1 0.173 
+text->img @ 5 0.318 
+img->text @ 5 0.346 
+text->img @ similarity 0.843 0.175
+img->text @ similarity 0.845 0.174
+n: 40000
+text->img @ 1 0.145 
+img->text @ 1 0.166 
+text->img @ 5 0.304 
+img->text @ 5 0.332 
+text->img @ similarity 0.841 0.175
+img->text @ similarity 0.844 0.174
+n: 45000
+text->img @ 1 0.139 
+img->text @ 1 0.160 
+text->img @ 5 0.293 
+img->text @ 5 0.321 
+text->img @ similarity 0.840 0.175
+img->text @ similarity 0.842 0.174
+n: 50000
+text->img @ 1 0.133 
+img->text @ 1 0.153 
+text->img @ 5 0.283 
+img->text @ 5 0.311 
+text->img @ similarity 0.839 0.175
+img->text @ similarity 0.842 0.174
+openai ViT-B/16
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.310 
+img->text @ 1 0.343 
+text->img @ 5 0.577 
+img->text @ 5 0.595 
+text->img @ similarity 0.875 0.169
+img->text @ similarity 0.878 0.169
+n: 10000
+text->img @ 1 0.247 
+img->text @ 1 0.282 
+text->img @ 5 0.479 
+img->text @ 5 0.514 
+text->img @ similarity 0.863 0.172
+img->text @ similarity 0.866 0.172
+n: 15000
+text->img @ 1 0.213 
+img->text @ 1 0.244 
+text->img @ 5 0.420 
+img->text @ 5 0.453 
+text->img @ similarity 0.855 0.173
+img->text @ similarity 0.859 0.173
+n: 20000
+text->img @ 1 0.188 
+img->text @ 1 0.218 
+text->img @ 5 0.380 
+img->text @ 5 0.410 
+text->img @ similarity 0.850 0.174
+img->text @ similarity 0.853 0.173
+n: 25000
+text->img @ 1 0.174 
+img->text @ 1 0.204 
+text->img @ 5 0.352 
+img->text @ 5 0.387 
+text->img @ similarity 0.847 0.174
+img->text @ similarity 0.852 0.173
+n: 30000
+text->img @ 1 0.163 
+img->text @ 1 0.191 
+text->img @ 5 0.333 
+img->text @ 5 0.368 
+text->img @ similarity 0.845 0.174
+img->text @ similarity 0.849 0.174
+n: 35000
+text->img @ 1 0.154 
+img->text @ 1 0.182 
+text->img @ 5 0.315 
+img->text @ 5 0.352 
+text->img @ similarity 0.843 0.174
+img->text @ similarity 0.848 0.173
+n: 40000
+text->img @ 1 0.147 
+img->text @ 1 0.175 
+text->img @ 5 0.303 
+img->text @ 5 0.340 
+text->img @ similarity 0.841 0.174
+img->text @ similarity 0.847 0.173
+n: 45000
+text->img @ 1 0.141 
+img->text @ 1 0.169 
+text->img @ 5 0.293 
+img->text @ 5 0.329 
+text->img @ similarity 0.840 0.174
+img->text @ similarity 0.845 0.174
+n: 50000
+text->img @ 1 0.136 
+img->text @ 1 0.163 
+text->img @ 5 0.283 
+img->text @ 5 0.318 
+text->img @ similarity 0.838 0.174
+img->text @ similarity 0.844 0.174
+openai ViT-B/32
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.288 
+img->text @ 1 0.319 
+text->img @ 5 0.540 
+img->text @ 5 0.580 
+text->img @ similarity 0.869 0.171
+img->text @ similarity 0.876 0.169
+n: 10000
+text->img @ 1 0.219 
+img->text @ 1 0.259 
+text->img @ 5 0.442 
+img->text @ 5 0.487 
+text->img @ similarity 0.858 0.173
+img->text @ similarity 0.862 0.173
+n: 15000
+text->img @ 1 0.185 
+img->text @ 1 0.219 
+text->img @ 5 0.383 
+img->text @ 5 0.429 
+text->img @ similarity 0.852 0.173
+img->text @ similarity 0.855 0.173
+n: 20000
+text->img @ 1 0.166 
+img->text @ 1 0.195 
+text->img @ 5 0.345 
+img->text @ 5 0.387 
+text->img @ similarity 0.845 0.175
+img->text @ similarity 0.849 0.174
+n: 25000
+text->img @ 1 0.151 
+img->text @ 1 0.181 
+text->img @ 5 0.320 
+img->text @ 5 0.363 
+text->img @ similarity 0.844 0.174
+img->text @ similarity 0.847 0.174
+n: 30000
+text->img @ 1 0.140 
+img->text @ 1 0.170 
+text->img @ 5 0.301 
+img->text @ 5 0.342 
+text->img @ similarity 0.841 0.175
+img->text @ similarity 0.845 0.174
+n: 35000
+text->img @ 1 0.131 
+img->text @ 1 0.161 
+text->img @ 5 0.283 
+img->text @ 5 0.326 
+text->img @ similarity 0.840 0.175
+img->text @ similarity 0.844 0.174
+n: 40000
+text->img @ 1 0.125 
+img->text @ 1 0.153 
+text->img @ 5 0.271 
+img->text @ 5 0.313 
+text->img @ similarity 0.838 0.175
+img->text @ similarity 0.842 0.174
+n: 45000
+text->img @ 1 0.119 
+img->text @ 1 0.147 
+text->img @ 5 0.260 
+img->text @ 5 0.302 
+text->img @ similarity 0.837 0.175
+img->text @ similarity 0.841 0.174
+n: 50000
+text->img @ 1 0.114 
+img->text @ 1 0.141 
+text->img @ 5 0.250 
+img->text @ 5 0.292 
+text->img @ similarity 0.835 0.175
+img->text @ similarity 0.840 0.174
+openai ViT-L/14
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.338 
+img->text @ 1 0.359 
+text->img @ 5 0.595 
+img->text @ 5 0.612 
+text->img @ similarity 0.875 0.168
+img->text @ similarity 0.881 0.167
+n: 10000
+text->img @ 1 0.268 
+img->text @ 1 0.300 
+text->img @ 5 0.503 
+img->text @ 5 0.528 
+text->img @ similarity 0.862 0.171
+img->text @ similarity 0.871 0.170
+n: 15000
+text->img @ 1 0.229 
+img->text @ 1 0.261 
+text->img @ 5 0.444 
+img->text @ 5 0.471 
+text->img @ similarity 0.856 0.172
+img->text @ similarity 0.863 0.171
+n: 20000
+text->img @ 1 0.207 
+img->text @ 1 0.233 
+text->img @ 5 0.403 
+img->text @ 5 0.431 
+text->img @ similarity 0.849 0.175
+img->text @ similarity 0.857 0.173
+n: 25000
+text->img @ 1 0.193 
+img->text @ 1 0.220 
+text->img @ 5 0.374 
+img->text @ 5 0.407 
+text->img @ similarity 0.848 0.175
+img->text @ similarity 0.856 0.173
+n: 30000
+text->img @ 1 0.181 
+img->text @ 1 0.207 
+text->img @ 5 0.354 
+img->text @ 5 0.388 
+text->img @ similarity 0.847 0.174
+img->text @ similarity 0.852 0.174
+n: 35000
+text->img @ 1 0.171 
+img->text @ 1 0.197 
+text->img @ 5 0.337 
+img->text @ 5 0.371 
+text->img @ similarity 0.846 0.174
+img->text @ similarity 0.851 0.174
+n: 40000
+text->img @ 1 0.164 
+img->text @ 1 0.189 
+text->img @ 5 0.324 
+img->text @ 5 0.357 
+text->img @ similarity 0.844 0.174
+img->text @ similarity 0.850 0.174
+n: 45000
+text->img @ 1 0.159 
+img->text @ 1 0.183 
+text->img @ 5 0.315 
+img->text @ 5 0.347 
+text->img @ similarity 0.842 0.174
+img->text @ similarity 0.848 0.174
+n: 50000
+text->img @ 1 0.152 
+img->text @ 1 0.176 
+text->img @ 5 0.303 
+img->text @ 5 0.335 
+text->img @ similarity 0.842 0.174
+img->text @ similarity 0.847 0.174
+cloob ViT-B/16
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.296 
+img->text @ 1 0.310 
+text->img @ 5 0.540 
+img->text @ 5 0.568 
+text->img @ similarity 0.867 0.172
+img->text @ similarity 0.872 0.169
+n: 10000
+text->img @ 1 0.229 
+img->text @ 1 0.245 
+text->img @ 5 0.440 
+img->text @ 5 0.469 
+text->img @ similarity 0.854 0.175
+img->text @ similarity 0.861 0.172
+n: 15000
+text->img @ 1 0.197 
+img->text @ 1 0.213 
+text->img @ 5 0.389 
+img->text @ 5 0.416 
+text->img @ similarity 0.851 0.174
+img->text @ similarity 0.856 0.173
+n: 20000
+text->img @ 1 0.178 
+img->text @ 1 0.189 
+text->img @ 5 0.355 
+img->text @ 5 0.381 
+text->img @ similarity 0.847 0.175
+img->text @ similarity 0.850 0.174
+n: 25000
+text->img @ 1 0.163 
+img->text @ 1 0.174 
+text->img @ 5 0.330 
+img->text @ 5 0.354 
+text->img @ similarity 0.844 0.175
+img->text @ similarity 0.847 0.175
+n: 30000
+text->img @ 1 0.151 
+img->text @ 1 0.160 
+text->img @ 5 0.308 
+img->text @ 5 0.330 
+text->img @ similarity 0.842 0.175
+img->text @ similarity 0.845 0.175
+n: 35000
+text->img @ 1 0.142 
+img->text @ 1 0.150 
+text->img @ 5 0.292 
+img->text @ 5 0.314 
+text->img @ similarity 0.840 0.175
+img->text @ similarity 0.841 0.175
+n: 40000
+text->img @ 1 0.134 
+img->text @ 1 0.142 
+text->img @ 5 0.279 
+img->text @ 5 0.300 
+text->img @ similarity 0.840 0.175
+img->text @ similarity 0.840 0.175
+n: 45000
+text->img @ 1 0.128 
+img->text @ 1 0.135 
+text->img @ 5 0.268 
+img->text @ 5 0.287 
+text->img @ similarity 0.839 0.175
+img->text @ similarity 0.839 0.174
+n: 50000
+text->img @ 1 0.122 
+img->text @ 1 0.130 
+text->img @ 5 0.257 
+img->text @ 5 0.275 
+text->img @ similarity 0.838 0.175
+img->text @ similarity 0.839 0.174
+cloob ViT-L/14
+--------------------------------------------------
+n: 5000
+text->img @ 1 0.275 
+img->text @ 1 0.308 
+text->img @ 5 0.526 
+img->text @ 5 0.570 
+text->img @ similarity 0.867 0.171
+img->text @ similarity 0.873 0.169
+n: 10000
+text->img @ 1 0.215 
+img->text @ 1 0.248 
+text->img @ 5 0.430 
+img->text @ 5 0.480 
+text->img @ similarity 0.853 0.174
+img->text @ similarity 0.862 0.171
+n: 15000
+text->img @ 1 0.186 
+img->text @ 1 0.215 
+text->img @ 5 0.382 
+img->text @ 5 0.424 
+text->img @ similarity 0.846 0.176
+img->text @ similarity 0.856 0.173
+n: 20000
+text->img @ 1 0.163 
+img->text @ 1 0.191 
+text->img @ 5 0.345 
+img->text @ 5 0.385 
+text->img @ similarity 0.842 0.176
+img->text @ similarity 0.851 0.174
+n: 25000
+text->img @ 1 0.152 
+img->text @ 1 0.175 
+text->img @ 5 0.320 
+img->text @ 5 0.356 
+text->img @ similarity 0.841 0.176
+img->text @ similarity 0.847 0.174
+n: 30000
+text->img @ 1 0.140 
+img->text @ 1 0.164 
+text->img @ 5 0.297 
+img->text @ 5 0.334 
+text->img @ similarity 0.840 0.175
+img->text @ similarity 0.844 0.174
+n: 35000
+text->img @ 1 0.132 
+img->text @ 1 0.155 
+text->img @ 5 0.282 
+img->text @ 5 0.318 
+text->img @ similarity 0.840 0.175
+img->text @ similarity 0.842 0.175
+n: 40000
+text->img @ 1 0.125 
+img->text @ 1 0.147 
+text->img @ 5 0.268 
+img->text @ 5 0.303 
+text->img @ similarity 0.839 0.174
+img->text @ similarity 0.840 0.174
+n: 45000
+text->img @ 1 0.120 
+img->text @ 1 0.141 
+text->img @ 5 0.257 
+img->text @ 5 0.292 
+text->img @ similarity 0.838 0.174
+img->text @ similarity 0.839 0.175
+n: 50000
+text->img @ 1 0.114 
+img->text @ 1 0.133 
+text->img @ 5 0.246 
+img->text @ 5 0.280 
+text->img @ similarity 0.836 0.174
+img->text @ similarity 0.838 0.175
+     first_n     metric       top_k  ...     value value-std              model
+0       5000  text->img           1  ...  0.371200  0.483126  openclip ViT-B-16
+1       5000  img->text           1  ...  0.387200  0.487110  openclip ViT-B-16
+2       5000  text->img           5  ...  0.635000  0.481430  openclip ViT-B-16
+3       5000  img->text           5  ...  0.653400  0.475887  openclip ViT-B-16
+4       5000  text->img  similarity  ...  0.885563  0.164562  openclip ViT-B-16
+..       ...        ...         ...  ...       ...       ...                ...
+415    50000  img->text           1  ...  0.133120  0.339704     cloob ViT-L/14
+416    50000  text->img           5  ...  0.245900  0.430620     cloob ViT-L/14
+417    50000  img->text           5  ...  0.280400  0.449195     cloob ViT-L/14
+418    50000  text->img  similarity  ...  0.836482  0.174443     cloob ViT-L/14
+419    50000  img->text  similarity  ...  0.837526  0.174774     cloob ViT-L/14
+
+[420 rows x 8 columns]
+(0.24344100000000002, 0.659934)
+(0.24344100000000002, 0.659934)
+(0.826618527173996, 0.8967213827371597)
+(0.826618527173996, 0.8967213827371597)
+(0.24344100000000002, 0.659934)
+(0.24344100000000002, 0.659934)
+(0.826618527173996, 0.8967213827371597)
+(0.826618527173996, 0.8967213827371597)
