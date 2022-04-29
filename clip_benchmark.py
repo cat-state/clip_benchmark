@@ -1,5 +1,6 @@
 from pathlib import Path
 
+import pandas
 import numpy as np
 from tqdm import tqdm
 from fire import Fire
@@ -60,7 +61,7 @@ def clip_benchmark(
     gt = np.arange(len(img_embeds))[:, None]
     text_embeds = np.load(text_embeds_file)[:n].astype(np.float32)
 
-    n_range = np.geomspace(5000, n, num=6, dtype=np.int32).tolist()
+    n_range = np.linspace(5000, n, num=10, dtype=np.int32).tolist()
 
     results = (cross_modal_retrieval(img_embeds[:first_n],
                                      text_embeds[:first_n],
@@ -100,18 +101,8 @@ def clip_benchmark(
                            "value": s[top_k][metric].mean(),
                            "value-std": s[top_k][metric].std()}
 
-
-    import pandas
-
     return pandas.DataFrame.from_records([*report(similarity)])
-    print(results)
-    ax = seaborn.lineplot(x="first_n", y="value", hue="metric", data=results[results['measuring'] == 'knn'])
-    ax.set(ylabel="cross-modal recall")
-    plt.legend()
-    plt.title(title)
-    if title is not None:
-        plt.savefig(f"{title}.png")
-    plt.show()
+
 
 def plot_models():
     import pandas
@@ -121,14 +112,25 @@ def plot_models():
     models = {
         "openclip ViT-B-16": dict(img_embeds="coco-embeds-open-clip-vit-b-16/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-16/text_emb/text_emb_0.npy"),
+
         "openclip ViT-B-32": dict(img_embeds="coco-embeds-open-clip-vit-b-32/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-32/text_emb/text_emb_0.npy"),
+
+        # "openclip ViT-B-32-e32": dict(img_embeds="coco-embeds-open_clip-vit-b-32-e32/img_emb/img_emb_0.npy",
+        #                          text_embeds="coco-embeds-open_clip-vit-b-32-e32/text_emb/text_emb_0.npy"),
+
+        # "openclip ViT-B-32-e31": dict(img_embeds="coco-embeds-open_clip-vit-b-32-e31/img_emb/img_emb_0.npy",
+        #                          text_embeds="coco-embeds-open_clip-vit-b-32-e31/text_emb/text_emb_0.npy"),
+
         "openai ViT-B/16":  dict(img_embeds="coco-embeds-openai-vit-b-16/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-openai-vit-b-16/text_emb/text_emb_0.npy"),
+
         "openai ViT-B/32":  dict(img_embeds="coco-embeds-openai-vit-b-32/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-openai-vit-b-32/text_emb/text_emb_0.npy"),
+
         "openai ViT-L/14":  dict(img_embeds="coco-embeds-openai-vit-l-14/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-openai-vit-l-14/text_emb/text_emb_0.npy"),
+
         "cloob ViT-B/16":  dict(img_embeds="cloob-vit-b-16/cloob_laion_400m_vit_b_16_32_epochs_coco_train2017_image_embeds.npy",
                                   text_embeds="cloob-vit-b-16/cloob_laion_400m_vit_b_16_32_epochs_coco_train2017_text_embeds.npy"),
         "cloob ViT-L/14":  dict(img_embeds="cloob-vit-l-14-168_image_embeds.npy",
@@ -145,14 +147,12 @@ def plot_models():
         res["model"] = name
         results = pandas.concat([results, res], ignore_index=True)
 
-    print(results)
     fig, axes = plt.subplots(2, 2)
 
     for i, metric in enumerate(["text->img", "img->text"]):
         for j, at in enumerate([5, "similarity"]):
             lims = (results[results["@"] == at]["value"].min() * 0.99, results[results["@"] == at]["value"].max() * 1.01)
             for ax in axes[j]:
-                print(lims)
                 ax.set(ylim=lims)
             subset = results[results['metric'] == metric]
             subset = subset[subset["@"] == at]
@@ -163,9 +163,7 @@ def plot_models():
 
     plt.show()
 
-plot_models()
-
-
 
 if __name__ == "__main__":
-    Fire(clip_benchmark)
+
+    Fire(dict(benchmark=clip_benchmark, plots=plot_models))
