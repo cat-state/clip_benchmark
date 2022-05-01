@@ -113,8 +113,8 @@ def plot_models():
         "openclip ViT-B-16": dict(img_embeds="coco-embeds-open-clip-vit-b-16/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-16/text_emb/text_emb_0.npy"),
 
-        "openclip ViT-B-16 (336)": dict(img_embeds="coco-embeds-open_clip-vit-b-16-336/img_emb/img_emb_0.npy",
-                                  text_embeds="coco-embeds-open_clip-vit-b-16-336/text_emb/text_emb_0.npy"),
+        # "openclip ViT-B-16 (336)": dict(img_embeds="coco-embeds-open_clip-vit-b-16-336/img_emb/img_emb_0.npy",
+        #                           text_embeds="coco-embeds-open_clip-vit-b-16-336/text_emb/text_emb_0.npy"),
 
         "openclip ViT-B-32": dict(img_embeds="coco-embeds-open-clip-vit-b-32/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-32/text_emb/text_emb_0.npy"),
