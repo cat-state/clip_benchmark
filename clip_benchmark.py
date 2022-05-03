@@ -37,7 +37,7 @@ def cross_modal_retrieval(
     nearest_imgs_to_txt = knn(subset_txt, keys=subset_img, k=k)
     nearest_txts_to_img = knn(subset_img, keys=subset_txt, k=k)
 
-    return { 
+    return {
         "text->img": (nearest_imgs_to_txt == np.arange(len(text_embeds))[:, None]),
         "img->text": (nearest_txts_to_img == np.arange(len(img_embeds))[:, None]),
         "text->img-idxs": nearest_imgs_to_txt[:, 0],
@@ -110,6 +110,10 @@ def plot_models():
 
     import matplotlib.pyplot as plt
     models = {
+
+        "openai ViT-L/14 (diffusion prior)": dict(img_embeds="diff-prior-vit-14-l.npy",
+                                                  text_embeds="coco-embeds-openai-vit-l-14/text_emb/text_emb_0.npy"),
+
         "openclip ViT-B-16": dict(img_embeds="coco-embeds-open-clip-vit-b-16/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-open-clip-vit-b-16/text_emb/text_emb_0.npy"),
 
@@ -137,6 +141,7 @@ def plot_models():
         "openai ViT-L/14 (336)":  dict(img_embeds="coco-embeds-openai-vit-l-14-336/img_emb/img_emb_0.npy",
                                   text_embeds="coco-embeds-openai-vit-l-14-336/text_emb/text_emb_0.npy"),
 
+
         "cloob ViT-B/16":  dict(img_embeds="cloob-vit-b-16/cloob_laion_400m_vit_b_16_32_epochs_coco_train2017_image_embeds.npy",
                                   text_embeds="cloob-vit-b-16/cloob_laion_400m_vit_b_16_32_epochs_coco_train2017_text_embeds.npy"),
         "cloob ViT-L/14":  dict(img_embeds="cloob-vit-l-14-168_image_embeds.npy",
@@ -148,7 +153,7 @@ def plot_models():
         print(name)
         print("-" * 50)
         res = clip_benchmark(img_embeds_file=embs["img_embeds"],
-                             text_embeds_file=embs["text_embeds"], n=50000, k=5, sentence_embs="sent-1st.npy", title=name,
+                             text_embeds_file=embs["text_embeds"], n=50000, k=50, sentence_embs="sent-1st.npy", title=name,
                        dataset="../mscoco-1st-cap/{00000..00011}.tar")
         res["model"] = name
         results = pandas.concat([results, res], ignore_index=True)
@@ -166,8 +171,9 @@ def plot_models():
             ax = seaborn.lineplot(x="first_n", y="value", hue="model", data=subset, ax=axes[j, i])
             ax.set(ylabel=f"{title}", title=f"{metric} {title}")
 
-
+    plt.savefig("plot.png")
     plt.show()
+    
 
 
 if __name__ == "__main__":
