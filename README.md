@@ -25,10 +25,11 @@ from clip_benchmark import cross_modal_retrieval
 
 results = cross_modal_retrieval(img_embeds, text_embeds, k=5)
 
-print(results) # { "text->img": <boolean array with True where that item matched the query>,
-							 #   "img->text": same as as above but for texts
-							 #   "text->img-idxs": the retrieved indicies into the img_embeds
-							 #   "img->text-idxs": same as above but for text_embeds }
+print(results) 
+# { "text->img": <boolean array with True where that item matched the query>,
+#   "img->text": same as as above but for texts
+#   "text->img-idxs": the retrieved indicies into the img_embeds
+#   "img->text-idxs": same as above but for text_embeds }
 ```
 
 ![plots showing openclip vit-16 beating all other models](plot.png)
