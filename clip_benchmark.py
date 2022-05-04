@@ -111,7 +111,9 @@ def plot_models():
     import matplotlib.pyplot as plt
     models = {
 
-        "openai ViT-L/14 (diffusion prior)": dict(img_embeds="diff-prior-vit-14-l.npy",
+        "openai ViT-L/14 (diffusion prior as text)": dict(text_embeds="diff-prior-vit-14-l.npy",
+                                                  img_embeds="coco-embeds-openai-vit-l-14/img_emb/img_emb_0.npy"),
+        "openai ViT-L/14 (diffusion prior as img)": dict(img_embeds="diff-prior-vit-14-l.npy",
                                                   text_embeds="coco-embeds-openai-vit-l-14/text_emb/text_emb_0.npy"),
 
         "openclip ViT-B-16": dict(img_embeds="coco-embeds-open-clip-vit-b-16/img_emb/img_emb_0.npy",
@@ -152,6 +154,7 @@ def plot_models():
     for name, embs in models.items():
         print(name)
         print("-" * 50)
+
         res = clip_benchmark(img_embeds_file=embs["img_embeds"],
                              text_embeds_file=embs["text_embeds"], n=50000, k=50, sentence_embs="sent-1st.npy", title=name,
                        dataset="../mscoco-1st-cap/{00000..00011}.tar")
