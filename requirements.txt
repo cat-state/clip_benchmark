@@ -1,0 +1,9 @@
+faiss ~= 1.7.2
+fire
+numpy
+pandas
+tqdm
+sentence-transformers ~= 2.2
+webdataset
+
+
