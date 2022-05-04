@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="clip_benchmark-cat-state",
+    name="clip_benchmark",
     version="0.0.1",
     author="cat-state",
     author_email="cat-state@tutanota.com",
